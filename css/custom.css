@@ -1,0 +1,19 @@
+/* below means until 768 px is hit that width applies */
+@media (min-width: 768px) {
+    .news-input{
+        width: 50%;
+    }
+}
+
+
+body::before{
+    display: block;
+    content: ' ';
+    height: 30px;
+}
+
+#map{
+    height: 100%;
+    width: 100%;
+    border-radius: 10px;
+}

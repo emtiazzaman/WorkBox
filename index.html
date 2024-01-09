@@ -1,0 +1,474 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Page</title>
+    <link rel="stylesheet" href="bootstrap5/css/bootstrap.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/custom.css">
+</head>
+
+<body id="top">
+
+    <!-- navbar/menu start -->
+
+    <!-- navbar-expand-sm  is used sothat break point is triggerd if in small screen menu dissapear -->
+    <nav class="navbar navbar-expand-sm bg-dark navbar-dark fixed-top" >
+        <div class="container">
+            <a href="#" class="navbar-brand">SiteBrand</a>
+
+            <!-- class="navbar-toggler" is needed to work//data-bs-toggle is attribute to collapse in brkpoint and target is to menu linkup -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navmnu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+
+            <!-- collapse below is triggerd while screen breakpoint reaches -->
+            <div class="collapse navbar-collapse" id="navmnu">
+                <!-- ms-auto is used right align menu bar with items -->
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a href="#learn" class="nav-link"> Why you will learn</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#questions" class="nav-link">Questions</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#instructors" class="nav-link"> Instructors </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+    </nav>
+
+    <!-- navbar/menu end -->
+
+    <!-- showcase start -->
+    <!-- text-sm-start is untill , screen is not sm screen size breakpoint the screen text will align start -->
+
+    <section class="bg-dark text-light p-5 text-center text-sm-start  p-lg-0 pt-lg-5">
+
+        <div class="container">
+
+            <!-- d-sm-flex is width flex is cancled on sm breakpoin-->
+            <div class="d-sm-flex align-items-center justify-content-between">
+                <div>
+                    <h1>Welcome to <span class="text-warning">web development</span></h1>
+                    <p class="lead my-4">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit
+                        .Autem eos pariatur amet in numquam maiores met in
+                        numquam maiore e!
+                    </p>
+                    <button class="btn btn-primary btn-lg" data-bs-toggle="modal" data-bs-target="#enroll">
+                        Enroll Now
+                    </button>
+                </div>
+                <img src="img/showcase.svg" alt="show" class="img-fluid w-50 d-sm-block d-none">
+                <!-- w-50 is width 50% , d-sm-block d-none -> means display none is applied
+                    for all screens and display block is applied until sm screen.
+                -->
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- showcase end -->
+
+    <!-- subscription banner start -->
+    <section class="bg-primary text-light p-5">
+        <div class="container">
+            <div class="d-md-flex align-items-center justify-content-between">
+                <h3 class="mb-3 mb-sm-0">
+                    Sign Up For Newsletter
+                </h3>
+                <div class="input-group  news-input">
+                    <input type="text" class="form-control" placeholder="your Email">
+                    <button class="btn btn-dark btn-lg" id="button-addon2">
+                        Subscribe
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- subscription banner end -- >
+
+    <!-- boxes start    -->
+
+    <!-- col-md means its column until it hits md screeen -->
+    <!-- here 3 col is 3*4=12 layout -->
+    <section class="p-5">
+        <div class="container">
+            <div class="row text-center g-4">
+                <!-- here g is just gap 4 which applied on all col s , canalso use x or y axis -->
+                <!-- card -->
+                <div class="col-md">
+                    <div class="card bg-dark text-light p-3">
+                        <div class="h1 mb-3">
+                            <i class="fa fa-laptop"></i>
+                        </div>
+                        <h3 class="card-title mb-3">Virtual</h3>
+                        <p class="class-text">
+                            Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                            Ex eaque sed at reprehenderit fug
+                            a voluptatum ratione, esse, possimusrit fug
+                            a voluptatum ratione, esse, possimus possimus rit fug
+                            a voluptatum ratione, esse, possimus
+                        </p>
+                        <a href="" class="btn btn-primary">Read More</a>
+                    </div>
+                </div>
+                <!-- card -->
+                <div class="col-md">
+                    <div class="card bg-secondary text-light p-3">
+                        <div class="h1 mb-3">
+                            <i class="fa fa-picture-o"></i>
+                        </div>
+                        <h3 class="card-title mb-3">Virtual</h3>
+                        <p class="class-text">
+                            Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                            Ex eaque sed at reprehenderit fug
+                            a voluptatum ratione, esse, possimusrit fug
+                            a voluptatum ratione, esse, possimus possimus rit fug
+                            a voluptatum ratione, esse, possimus
+                        </p>
+                        <a href="" class="btn btn-primary">Read More</a>
+                    </div>
+                </div>
+
+                <!-- card -->
+                <div class="col-md">
+                    <div class="card bg-dark text-light p-3">
+                        <div class="h1 mb-3">
+                            <i class="fa fa-users"></i>
+                        </div>
+                        <h3 class="card-title mb-3">Virtual</h3>
+                        <p class="class-text">
+                            Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                            Ex eaque sed at reprehenderit fug
+                            a voluptatum ratione, esse, possimusrit fug
+                            a voluptatum ratione, esse, possimus possimus rit fug
+                            a voluptatum ratione, esse, possimus
+                        </p>
+                        <a href="" class="btn btn-primary">Read More</a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- boxes end    -->
+
+    <!-- learn start -->
+    <section class="p-5" id="learn">
+        <div class="container">
+            <div class="row align-items-center justify-content-between">
+                <div class="col-md">
+                    <img src="img/fundamentals.svg" alt="fun" class="img-fluid">
+                </div>
+                <div class="col-md p-5">
+                    <h3>Learn the fundementals</h3>
+                    <p class="lead">
+                        Lorem ipsum dolor sit amet consectetur
+                        adipisicing elit. Iusto, corporis molesti
+                        as provident unde explicabo, omnis eius numquam neque esse v
+                        ero maxime sit totam sequi, doloremque repudiandae temporibus harum accusamus beatae!
+                    </p>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur
+                        adipisicing elit. Iusto, corporis molesti
+                        as provident unde explicabo, omnis eius numquam neque esse v
+                        ero maxime sit totam sequi, doloremque repudiandae temporibus harum accusamus beatae!
+                    </p>
+                    <buttom class="btn btn-light  mt-3">
+                        <i class="fa fa-arrow-circle-o-right"></i> Read More
+                    </buttom>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- learn end -->
+
+    <!-- learn 2 start -->
+    <section class="p-5 bg-dark" id="learn">
+        <div class="container">
+            <div class="row align-items-center justify-content-between">
+
+                <div class="col-md p-5 text-light">
+                    <h3>Learn React</h3>
+                    <p class="lead">
+                        Lorem ipsum dolor sit amet consectetur
+                        adipisicing elit. Iusto, corporis molesti
+                        as provident unde explicabo, omnis eius numquam neque esse v
+                        ero maxime sit totam sequi, doloremque repudiandae temporibus harum accusamus beatae!
+                    </p>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur
+                        adipisicing elit. Iusto, corporis molesti
+                        as provident unde explicabo, omnis eius numquam neque esse v
+                        ero maxime sit totam sequi, doloremque repudiandae temporibus harum accusamus beatae!
+                    </p>
+                    <buttom class="btn btn-light  mt-3">
+                        <i class="fa fa-arrow-circle-o-right"></i> Read More
+                    </buttom>
+                </div>
+                <div class="col-md">
+                    <img src="img/react.svg" alt="fun" class="img-fluid">
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <!-- learn2 end -->
+
+    <!-- faq  start-->
+    <section id="questions" class="p-5">
+        <div class="container">
+            <h2 class="text-center mb-4">Frequently Asked Questions</h2>
+            <div class="accordion" id="questions">
+
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingOne">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#q1">
+                            Where are you?
+                        </button>
+                    </h2>
+                    <div id="q1" class="accordion-collapse collapse " data-bs-parent="#questions">
+                        <div class="accordion-body">
+                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolores, et! Eius, tenetur? Dolor
+                            possimus ipsa perspiciatis vitae ullam aliquid animi maiores laboriosam et, atque
+                            consequuntur tempore iste, perferendis hic quas.
+                        </div>
+                    </div>
+                </div>
+
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingTwo">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseTwo">
+                            What do you want know?
+                        </button>
+                    </h2>
+                    <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#questions">
+                        <div class="accordion-body">
+                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolores, et! Eius, tenetur? Dolor
+                            possimus ipsa perspiciatis vitae ullam aliquid animi maiores laboriosam et, atque
+                            consequuntur tempore iste, perferendis hic quas.
+                        </div>
+                    </div>
+                </div>
+
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingThree">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseThree">
+                            How to subscribe courses?
+                        </button>
+                    </h2>
+                    <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#questions">
+                        <div class="accordion-body">
+                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolores, et! Eius, tenetur? Dolor
+                            possimus ipsa perspiciatis vitae ullam aliquid animi maiores laboriosam et, atque
+                            consequuntur tempore iste, perferendis hic quas.
+                        </div>
+                    </div>
+                </div>
+
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingThree">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseThree">
+                            How to join?
+                        </button>
+                    </h2>
+                    <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolores, et! Eius, tenetur? Dolor
+                            possimus ipsa perspiciatis vitae ullam aliquid animi maiores laboriosam et, atque
+                            consequuntur tempore iste, perferendis hic quas.
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+    </section>
+    <!-- faq  end-->
+
+    <!-- memeber start -->
+    <section id="instructors" class="bg-primary p-5">
+        <div class="container">
+            <h2 class="text-center text-white">
+                Our Instructors
+            </h2>
+            <p class="lead text-center mb-5 text-white"">
+                We Have 5+ Year Experience in The Field Of Web Development
+            </p>
+            <div class=" row g-4">
+            <div class="col-md-6 col-lg-3">
+                <div class="card bg-light">
+                    <div class="card-body text-center">
+                        <img src="img/2.png" alt="person" class="rounded-circle m-4">
+                        <h3 class="card-title mb-3">John J Ramabo</h3>
+                        <p class="card-text">
+                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deserunt sunt repudiandae
+                            officia nesciunt incidunt, cumque, blanditiis
+                        </p>
+                        <a href="#"><i class="fa fa-twitter text-dark mx-1"></i></a>
+                        <a href="#"><i class="fa fa-facebook text-dark mx-1"></i></a>
+                        <a href="#"><i class="fa fa-linkedin text-dark mx-1"></i></a>
+                        <a href="#"><i class="fa fa-google text-dark mx-1"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-6 col-lg-3">
+                <div class="card bg-light">
+                    <div class="card-body text-center">
+                        <img src="img/2.png" alt="person" class="rounded-circle m-4">
+                        <h3 class="card-title mb-3">John J Ramabo</h3>
+                        <p class="card-text">
+                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deserunt sunt repudiandae
+                            officia nesciunt incidunt, cumque, blanditiis
+                        </p>
+                        <a href="#"><i class="fa fa-twitter text-dark mx-1"></i></a>
+                        <a href="#"><i class="fa fa-facebook text-dark mx-1"></i></a>
+                        <a href="#"><i class="fa fa-linkedin text-dark mx-1"></i></a>
+                        <a href="#"><i class="fa fa-google text-dark mx-1"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-6 col-lg-3">
+                <div class="card bg-light">
+                    <div class="card-body text-center">
+                        <img src="img/2.png" alt="person" class="rounded-circle m-4">
+                        <h3 class="card-title mb-3">John J Ramabo</h3>
+                        <p class="card-text">
+                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deserunt sunt repudiandae
+                            officia nesciunt incidunt, cumque, blanditiis
+                        </p>
+                        <a href="#"><i class="fa fa-twitter text-dark mx-1"></i></a>
+                        <a href="#"><i class="fa fa-facebook text-dark mx-1"></i></a>
+                        <a href="#"><i class="fa fa-linkedin text-dark mx-1"></i></a>
+                        <a href="#"><i class="fa fa-google text-dark mx-1"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-6 col-lg-3">
+                <div class="card bg-light">
+                    <div class="card-body text-center">
+                        <img src="img/2.png" alt="person" class="rounded-circle m-4">
+                        <h3 class="card-title mb-3">John J Ramabo</h3>
+                        <p class="card-text">
+                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deserunt sunt repudiandae
+                            officia nesciunt incidunt, cumque, blanditiis
+                        </p>
+                        <a href="#"><i class="fa fa-twitter text-dark mx-1"></i></a>
+                        <a href="#"><i class="fa fa-facebook text-dark mx-1"></i></a>
+                        <a href="#"><i class="fa fa-linkedin text-dark mx-1"></i></a>
+                        <a href="#"><i class="fa fa-google text-dark mx-1"></i></a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        </div>
+    </section>
+    <!-- memeber -->
+
+
+    <!-- contact -->
+    <section class="p-5">
+        <div class="container">
+            <div class="row g-4">
+
+                <div class="col-md">
+                    <h2 class="text-center mb-4">
+                        Contact Info
+                    </h2>
+                    <ul class="list-group list-group-flush lead">
+                        <li class="list-group-item">
+                            <span class="fw-bold">Main Location:</span>
+                            50 Mt Boston USA
+                        </li>
+                        <li class="list-group-item">
+                            <span class="fw-bold">Phone:</span>
+                            88845454645
+                        </li>
+                        <li class="list-group-item">
+                            <span class="fw-bold">Email:</span>
+                            aaaa@aaa.com
+                        </li>
+                        <li class="list-group-item">
+                            <span class="fw-bold">WebSite:</span>
+                            www.abc.com
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="col-md bg-dark">
+
+                </div>
+
+
+            </div>
+        </div>
+    </section>
+    <!-- contact -->
+
+    <footer class="p-5 bg-dark text-white text-center position-relative">
+        <div class="container">
+            <p class="lead">Copyright &copy; 2024 Emtiaz Zaman </p>
+            <a href="#top" class="position-absolute bottom-0 end-0 p-5">
+                <i class="fa-3x fa fa-arrow-circle-o-up "></i>
+            </a>
+        </div>
+    </footer>
+
+    <div class="modal fade" id="enroll" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Enrolment</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p>Give information to enroll</p>
+                    <form class="" action="">
+                        <div class="mb-3">
+                            <label for="" class="form-label">Name</label>
+                            <input type="text" class="form-control" name="name" placeholder="Give Us Your Email" />
+                        </div>
+                        <div class="mb-3">
+                            <label for="" class="form-label">Phone</label>
+                            <input type="text" class="form-control" name="phone" placeholder="Give Us Your Email" />
+                        </div>
+                        <div class="mb-3">
+                            <label for="" class="form-label">Email</label>
+                            <input type="text" class="form-control" name="email" aria-describedby="helpId"
+                                placeholder="Give Us Your Email" />
+                        </div>
+                    </form>
+
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Submit</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="bootstrap5/js/bootstrap.js"></script>
+</body>
+
+</html>
